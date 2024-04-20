@@ -6,5 +6,10 @@ namespace csharp_skiing_game
         {
             InitializeComponent();
         }
+
+        private void cash_label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
