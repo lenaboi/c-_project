@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("csharp_skiing_game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d78f8b9b6ad937123192e03588fc75f41ce7175")]
 [assembly: System.Reflection.AssemblyProductAttribute("csharp_skiing_game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("csharp_skiing_game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -70,7 +70,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Red;
-            pictureBox2.Location = new Point(-1, 0);
+            pictureBox2.Location = new Point(-5, 0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(13, 522);
             pictureBox2.TabIndex = 1;
@@ -155,6 +155,12 @@
             tree3.SizeMode = PictureBoxSizeMode.StretchImage;
             tree3.TabIndex = 9;
             tree3.TabStop = false;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 10;
+            timer1.Tick += timer1_Tick;
             // 
             // pictureBox3
             // 
