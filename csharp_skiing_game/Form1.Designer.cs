@@ -45,6 +45,7 @@
             gameover = new PictureBox();
             cash_label = new Label();
             score_label = new Label();
+            play_again = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)skier).BeginInit();
@@ -191,12 +192,23 @@
             score_label.TabIndex = 12;
             score_label.Text = "Score: 0";
             // 
+            // play_again
+            // 
+            play_again.Location = new Point(141, 365);
+            play_again.Name = "play_again";
+            play_again.Size = new Size(75, 23);
+            play_again.TabIndex = 13;
+            play_again.Text = "retry";
+            play_again.UseVisualStyleBackColor = true;
+            play_again.Click += play_again_Click_1;
+            // 
             // Box
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Snow;
             ClientSize = new Size(384, 521);
+            Controls.Add(play_again);
             Controls.Add(score_label);
             Controls.Add(cash_label);
             Controls.Add(gameover);
@@ -244,5 +256,6 @@
         private PictureBox gameover;
         private Label cash_label;
         private Label score_label;
+        private Button play_again;
     }
 }
