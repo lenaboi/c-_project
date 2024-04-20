@@ -1,6 +1,6 @@
 ﻿namespace csharp_skiing_game
 {
-    partial class Form1
+    partial class Box
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Box));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             skier = new PictureBox();
@@ -42,7 +42,7 @@
             tree3 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
             timer2 = new System.Windows.Forms.Timer(components);
-            pictureBox3 = new PictureBox();
+            gameover = new PictureBox();
             cash_label = new Label();
             score_label = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)cash3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tree2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tree3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gameover).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -162,15 +162,15 @@
             timer1.Interval = 10;
             timer1.Tick += timer1_Tick;
             // 
-            // pictureBox3
+            // gameover
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-1, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(388, 127);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
+            gameover.Image = (Image)resources.GetObject("gameover.Image");
+            gameover.Location = new Point(-1, 0);
+            gameover.Name = "gameover";
+            gameover.Size = new Size(388, 127);
+            gameover.SizeMode = PictureBoxSizeMode.StretchImage;
+            gameover.TabIndex = 10;
+            gameover.TabStop = false;
             // 
             // cash_label
             // 
@@ -181,7 +181,6 @@
             cash_label.Size = new Size(45, 15);
             cash_label.TabIndex = 11;
             cash_label.Text = "Cash: 0";
-            cash_label.Click += cash_label_Click;
             // 
             // score_label
             // 
@@ -192,7 +191,7 @@
             score_label.TabIndex = 12;
             score_label.Text = "Score: 0";
             // 
-            // Form1
+            // Box
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -200,7 +199,7 @@
             ClientSize = new Size(384, 521);
             Controls.Add(score_label);
             Controls.Add(cash_label);
-            Controls.Add(pictureBox3);
+            Controls.Add(gameover);
             Controls.Add(tree3);
             Controls.Add(tree2);
             Controls.Add(cash3);
@@ -211,7 +210,7 @@
             Controls.Add(skier);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Name = "Form1";
+            Name = "Box";
             Text = "Skiing Game";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -223,7 +222,7 @@
             ((System.ComponentModel.ISupportInitialize)cash3).EndInit();
             ((System.ComponentModel.ISupportInitialize)tree2).EndInit();
             ((System.ComponentModel.ISupportInitialize)tree3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gameover).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -242,7 +241,7 @@
         private PictureBox tree3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
-        private PictureBox pictureBox3;
+        private PictureBox gameover;
         private Label cash_label;
         private Label score_label;
     }
