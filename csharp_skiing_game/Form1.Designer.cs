@@ -194,12 +194,13 @@
             // 
             // play_again
             // 
+            play_again.BackColor = Color.DeepSkyBlue;
             play_again.Location = new Point(141, 365);
             play_again.Name = "play_again";
             play_again.Size = new Size(75, 23);
             play_again.TabIndex = 13;
-            play_again.Text = "retry";
-            play_again.UseVisualStyleBackColor = true;
+            play_again.Text = "Play Again!";
+            play_again.UseVisualStyleBackColor = false;
             play_again.Click += play_again_Click_1;
             // 
             // Box

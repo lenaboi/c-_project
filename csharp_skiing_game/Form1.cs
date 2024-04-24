@@ -25,7 +25,7 @@ namespace csharp_skiing_game
             gameover.Visible = false;
             play_again.Visible = false;
 
-            // Prevent user from enabling full screen mode
+           
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
 
@@ -84,10 +84,6 @@ namespace csharp_skiing_game
                 }
             }
         }
-
-
-
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             enemy(gamespeed1);
@@ -105,7 +101,7 @@ namespace csharp_skiing_game
             distancetravelled += gamespeed1;
             if (distancetravelled % 650 == 0)
             {
-                if (gamespeed1 < 20)
+                if (gamespeed1 < 6)
                     gamespeed1++;
             }
 
@@ -169,79 +165,34 @@ namespace csharp_skiing_game
             }
             else { cash3.Top += speed; }
         }
-
         void gameover1()
         {
-            if (skier.Bounds.IntersectsWith(rock.Bounds))
+            if (skier.Bounds.IntersectsWith(rock.Bounds) ||
+                skier.Bounds.IntersectsWith(tree1.Bounds) ||
+                skier.Bounds.IntersectsWith(tree2.Bounds) ||
+                skier.Bounds.IntersectsWith(tree3.Bounds))
+
             {
                 timer1.Enabled = false;
                 gameover.Visible = true;
-
+               
             }
 
-            if (skier.Bounds.IntersectsWith(tree1.Bounds))
-            {
-                timer1.Enabled = false;
-                gameover.Visible = true;
-
-
-            }
-
-            if (skier.Bounds.IntersectsWith(tree2.Bounds))
-            {
-                timer1.Enabled = false;
-                gameover.Visible = true;
-
-
-            }
-
-            if (skier.Bounds.IntersectsWith(tree3.Bounds))
-            {
-                timer1.Enabled = false;
-                gameover.Visible = true;
-
-
-            }
         }
-
-
         void playagain()
         {
-            if (skier.Bounds.IntersectsWith(rock.Bounds))
+            if (skier.Bounds.IntersectsWith(rock.Bounds) ||
+                skier.Bounds.IntersectsWith(tree1.Bounds) ||
+                skier.Bounds.IntersectsWith(tree2.Bounds) ||
+                skier.Bounds.IntersectsWith(tree3.Bounds))
+
             {
                 timer1.Enabled = false;
                 play_again.Visible = true;
 
             }
 
-            if (skier.Bounds.IntersectsWith(tree1.Bounds))
-            {
-                timer1.Enabled = false;
-                play_again.Visible = true;
-
-
-            }
-
-            if (skier.Bounds.IntersectsWith(tree2.Bounds))
-            {
-                timer1.Enabled = false;
-                play_again.Visible = true;
-
-
-            }
-
-            if (skier.Bounds.IntersectsWith(tree3.Bounds))
-            {
-                timer1.Enabled = false;
-                play_again.Visible = true;
-
-
-            }
         }
-
-
-
-
         private void Box_KeyDown(object? sender, KeyEventArgs e)
         {
             int movementSpeed = 25;
@@ -259,8 +210,6 @@ namespace csharp_skiing_game
             }
 
         }
-
-
         void cashcollection()
         {
 
@@ -329,9 +278,6 @@ namespace csharp_skiing_game
                 currentDirectory = currentDirectory.Parent;
             }
         }
-
-      
-
         private void play_again_Click_1(object sender, EventArgs e)
         {
             distancetravelled = 0;
