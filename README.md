@@ -25,3 +25,6 @@ Tämä peli on kehitetty C#-ohjelmointikielellä käyttäen Windows Forms -sovel
 5. Peli päättyy, kun hiihtäjä törmää esteeseen. Voit aloittaa uuden pelin painamalla "Pelaa uudelleen" -painiketta.
 
 
+![image](https://github.com/lenaboi/csharp_project/assets/163280952/743789bf-4b66-42f1-bfa5-94b029595ae3)
+
+
