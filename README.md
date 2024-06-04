@@ -23,3 +23,6 @@ Tämä peli on kehitetty C#-ohjelmointikielellä käyttäen Windows Forms -sovel
 3. Rakenna ja suorita projekti.
 4. Ohjaa hiihtäjää välttääksesi esteitä ja kerätäksesi kolikoita.
 5. Peli päättyy, kun hiihtäjä törmää esteeseen. Voit aloittaa uuden pelin painamalla "Pelaa uudelleen" -painiketta.
+
+   ![image](https://github.com/lenaboi/csharp_project/assets/163280952/1fba75ff-2fb7-4c4e-9343-1252db790b5a)
+
