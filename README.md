@@ -1,15 +1,15 @@
-## Hiihtopeli C#:llä
+## Laskettelupeli C#:llä
 
-Tämä on yksinkertainen hiihtopeli, joka on toteutettu C#-ohjelmointikielellä Windows Forms -sovelluksena.
+Tämä on yksinkertainen laskettelupeli, joka on toteutettu C#-ohjelmointikielellä Windows Forms -sovelluksena.
 
 ### Kuvaus
-Pelin tarkoituksena on ohjata hiihtäjää, välttää esteitä ja kerätä rahaa matkan varrella. Törmääminen esteisiin päättää pelin, mutta pelaaja voi aloittaa uuden pelin painamalla play again nappia.
+Pelin tarkoituksena on ohjata laskettelijaa, välttää esteitä ja kerätä rahaa matkan varrella. Törmääminen esteisiin päättää pelin, mutta pelaaja voi aloittaa uuden pelin painamalla play again nappia.
 
 ### Pelin kulku
-Pelaaja voi ohjata hiihtäjää nuolinäppäimillä tai A- ja D-näppäimillä. Kun hiihtäjä siirtyy vasemmalle, hänen sijaintinsa muuttuu enemmän vasemmalle. Kun hiihtäjä siirtyy oikealle, hänen sijaintinsa muuttuu enemmän oikealle.. Pelaaja voi kerätä kolikoita hiihtämällä niiden yli.
+Pelaaja voi ohjata laskettelijaa nuolinäppäimillä tai A- ja D-näppäimillä. Kun hiihtäjä siirtyy vasemmalle, hänen sijaintinsa muuttuu enemmän vasemmalle. Kun hiihtäjä siirtyy oikealle, hänen sijaintinsa muuttuu enemmän oikealle.. Pelaaja voi kerätä kolikoita hiihtämällä niiden yli.
 
 ### Pelin ominaisuudet
-- **Esteiden välttäminen**: Hiihtäjän on vältettävä kiviä ja puita.
+- **Esteiden välttäminen**: Laskettelijan on vältettävä kiviä ja puita.
 - **Kolikoiden kerääminen**: Pelaaja voi kerätä kentälle satunnaisesti ilmestyviä kolikoita ja seteleitä.
 - **Pisteiden kerääminen**: Pelaaja ansaitsee pisteitä etenemisestään. Pisteet lasketaan pelaajan hiihtämän matkan perusteella.
 - **Äänitehosteet**: Pelissä on äänitehosteita, kuten kolikon keräämisen ääni.
@@ -22,7 +22,7 @@ Tämä peli on kehitetty C#-ohjelmointikielellä käyttäen Windows Forms -sovel
 2. Avaa projekti Visual Studio -kehitysympäristössä tai vastaavassa C#-kehitystyökalussa.
 3. Rakenna ja suorita projekti.
 4. Ohjaa hiihtäjää välttääksesi esteitä ja kerätäksesi kolikoita.
-5. Peli päättyy, kun hiihtäjä törmää esteeseen. Voit aloittaa uuden pelin painamalla "Pelaa uudelleen" -painiketta.
+5. Peli päättyy, kun hiihtäjä törmää esteeseen, mutta voit aloittaa uuden pelin painamalla "Pelaa uudelleen" -painiketta.
 
 ### Kuvia pelistä
 Pelinäkymä kun peli on käynnissä, vasemmassa yläkulmassa pisteet ja kerätyt rahat näkyvät sekä päivittyvät realiajassa.
